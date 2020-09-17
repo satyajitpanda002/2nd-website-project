@@ -1,0 +1,262 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgba(194, 169, 99, 0.226);
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+   
+}
+
+/* navigation bar logo and image */
+
+#logo
+{
+margin: 0px 14px;
+}
+
+#logo img{
+    height: 30px;
+    margin: 0px 10px;
+}
+/* navigation bar list styling navigation bar  */
+
+#navbar ul{
+    display: flex;
+    padding: 0px 20px;
+   
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(68, 37, 1);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#navbar ul li{
+    list-style: none ;
+    font-size: 1rem ;
+    font-family: 'Lemonada', cursive;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 5px 15px;
+    margin: 0px 6px;
+    border-radius: 60px;
+   text-decoration: none ;
+} 
+#navbar ul li a:hover{
+    color:rgb(238, 234, 183) ;
+    background-color: black;
+}
+
+
+/* home section */
+
+#home::before{
+    content: "";
+    background: url('../images/home\ background.jpg');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -3;
+    opacity: 0.9;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* utility classes */
+#home h1{
+    color: rgb(58, 28, 3);
+    text-align: center;
+    font-family: 'Patua One', cursive;
+}
+#home p{
+    color: rgb(58, 28, 3);
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Patua One', cursive;
+}
+.btn:hover{
+    background-color:rgb(209, 105, 19);
+}
+
+/* services section  */
+
+#services{
+    margin: 34px;
+    display: flex;
+    position: absolute;
+    top: 30px;
+}
+#services .box{
+    border: 2px solid red;
+    padding: 5px 0px;
+    margin: 8px 8px;
+    border-radius: 15px;
+    background-color: rgb(226, 230, 190);
+    size: 25% 40%;
+}
+#services .box img{
+    height:100px;
+    width: 230px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'Lemonada', cursive;
+    font-size: 50%;
+}
+.services-container{
+    position: relative;
+    top: 40px;
+}
+.h-primary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Patua One', cursive;
+}
+.h-secondary{
+    font-size: 1.4rem;
+    padding: 12px;
+    font-family: 'Patua One', cursive;
+}
+.btn{
+    padding: 4px 30px;
+    border: 2px solid black;
+    background-color: rgba(88, 65, 3, 0.438);
+    margin:10px 15px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+/* client section  */
+#client-section{
+    position: relative;;
+    top: 325px;
+    height: 200px;
+
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('/images/client\ background.jpg');
+    width: 100%;
+    height: 70%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+#clients img{
+    height: 45px;
+}
+.client-item{
+    padding: 5px 20px;
+    margin: 5px 7px;
+}
+.client-item:hover{
+    transform: scale(1.5);
+}
+
+
+/* contact section  */
+
+#contact{
+    position: relative;
+    top: 325px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background:url('/images/contact\ form\ background.jpg')no-repeat center center/cover;
+    width: 50%;
+    height: 100%;
+    left: 260px;
+    z-index: -1;
+    opacity: 0.7;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input{
+    width: 100%;
+    padding: 0.5rem;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    margin: -5px 15px;
+    height: 10px;
+}
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    height: 70px;
+    margin: -5px 15px;
+}
+#contact-box form{
+    
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1rem;
+    font-family: 'Lemonada', cursive;
+}
+#submit{
+    position: relative;
+    left: 300px;
+    top: 20px;
+    padding:2px 18px;
+    margin: 2px 5px;
+    border: 1.1px solid black;
+    border-radius: 40px;
+}
+#submit:hover{
+    background-color: rgb(245, 175, 70);
+    cursor: pointer;
+}
+
+footer{
+    position: relative;
+    top: 350px;
+    display: flex;
+    justify-content: center;
+    font-weight:normal;
+    font-family: 'Lemonada', cursive;
+    background-color: black;
+    color: white;
+    font-size: 0.7rem;
+}
